@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lightweight Notepad</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Notepad</h1>
+      <select id="fileSelector">
+        <option value="new">New Note</option>
+      </select>
+    </div>
+
+    <div class="file-actions">
+      <input type="text" id="fileName" placeholder="File name">
+      <button id="saveBtn">Save</button>
+      <button id="deleteBtn">Delete</button>
+    </div>
+
+    <textarea id="notepad" placeholder="Type your notes here..."></textarea>
+
+    <!-- Download buttons (no external libs) -->
+    <div class="download-actions">
+      <button id="downloadTxtBtn">Download as TXT</button>
+      <button id="downloadPdfBtn">Download as PDF</button>
+    </div>
+
+    <div id="status"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
